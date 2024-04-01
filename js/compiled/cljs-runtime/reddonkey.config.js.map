@@ -1,0 +1,1 @@
+{"version":3,"sources":["reddonkey/config.cljs"],"mappings":";AAEA,AAAKA,gCACMC","names":["reddonkey.config/debug?","js/goog.DEBUG"],"sourcesContent":["(ns reddonkey.config)\n\n(def debug?\n  ^boolean goog.DEBUG)\n"]}
