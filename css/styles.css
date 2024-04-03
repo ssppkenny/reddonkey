@@ -1,3 +1,7 @@
 html, body, div {
 -webkit-touch-callout: none;
 }
+
+img {
+pointer-events: none;
+}
