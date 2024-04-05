@@ -8,10 +8,10 @@ return (function (x){
 return (((x >= a)) && ((x <= b)));
 });
 });
-reddonkey.geom.diff_to_action = (function reddonkey$geom$diff_to_action(p__13852){
-var vec__13853 = p__13852;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13853,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13853,(1),null);
+reddonkey.geom.diff_to_action = (function reddonkey$geom$diff_to_action(p__15771){
+var vec__15775 = p__15771;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15775,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15775,(1),null);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(1),(0)], null))){
 return (10);
 } else {
@@ -30,50 +30,50 @@ return null;
 }
 }
 });
-reddonkey.geom.block_to_coords = (function reddonkey$geom$block_to_coords(p__13856){
-var vec__13857 = p__13856;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13857,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13857,(1),null);
-var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13857,(2),null);
-var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13857,(3),null);
+reddonkey.geom.block_to_coords = (function reddonkey$geom$block_to_coords(p__15779){
+var vec__15783 = p__15779;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15783,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15783,(1),null);
+var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15783,(2),null);
+var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15783,(3),null);
 var xr = cljs.core.range.cljs$core$IFn$_invoke$arity$2(x,(x + w));
 var yr = cljs.core.range.cljs$core$IFn$_invoke$arity$2(y,(y + h));
-return cljs.core.mapcat.cljs$core$IFn$_invoke$arity$variadic(cljs.core.concat,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (){var iter__5523__auto__ = (function reddonkey$geom$block_to_coords_$_iter__13860(s__13861){
+return cljs.core.mapcat.cljs$core$IFn$_invoke$arity$variadic(cljs.core.concat,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (){var iter__5523__auto__ = (function reddonkey$geom$block_to_coords_$_iter__15790(s__15791){
 return (new cljs.core.LazySeq(null,(function (){
-var s__13861__$1 = s__13861;
+var s__15791__$1 = s__15791;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__13861__$1);
+var temp__5804__auto__ = cljs.core.seq(s__15791__$1);
 if(temp__5804__auto__){
-var s__13861__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__13861__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__13861__$2);
+var s__15791__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__15791__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__15791__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__13863 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__13862 = (0);
+var b__15793 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__15792 = (0);
 while(true){
-if((i__13862 < size__5522__auto__)){
-var x__$1 = cljs.core._nth(c__5521__auto__,i__13862);
-cljs.core.chunk_append(b__13863,(function (){var iter__5523__auto__ = ((function (i__13862,x__$1,c__5521__auto__,size__5522__auto__,b__13863,s__13861__$2,temp__5804__auto__,xr,yr,vec__13857,x,y,w,h){
-return (function reddonkey$geom$block_to_coords_$_iter__13860_$_iter__13864(s__13865){
-return (new cljs.core.LazySeq(null,((function (i__13862,x__$1,c__5521__auto__,size__5522__auto__,b__13863,s__13861__$2,temp__5804__auto__,xr,yr,vec__13857,x,y,w,h){
+if((i__15792 < size__5522__auto__)){
+var x__$1 = cljs.core._nth(c__5521__auto__,i__15792);
+cljs.core.chunk_append(b__15793,(function (){var iter__5523__auto__ = ((function (i__15792,x__$1,c__5521__auto__,size__5522__auto__,b__15793,s__15791__$2,temp__5804__auto__,xr,yr,vec__15783,x,y,w,h){
+return (function reddonkey$geom$block_to_coords_$_iter__15790_$_iter__15798(s__15799){
+return (new cljs.core.LazySeq(null,((function (i__15792,x__$1,c__5521__auto__,size__5522__auto__,b__15793,s__15791__$2,temp__5804__auto__,xr,yr,vec__15783,x,y,w,h){
 return (function (){
-var s__13865__$1 = s__13865;
+var s__15799__$1 = s__15799;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__13865__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__15799__$1);
 if(temp__5804__auto____$1){
-var s__13865__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__13865__$2)){
-var c__5521__auto____$1 = cljs.core.chunk_first(s__13865__$2);
+var s__15799__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__15799__$2)){
+var c__5521__auto____$1 = cljs.core.chunk_first(s__15799__$2);
 var size__5522__auto____$1 = cljs.core.count(c__5521__auto____$1);
-var b__13867 = cljs.core.chunk_buffer(size__5522__auto____$1);
-if((function (){var i__13866 = (0);
+var b__15801 = cljs.core.chunk_buffer(size__5522__auto____$1);
+if((function (){var i__15800 = (0);
 while(true){
-if((i__13866 < size__5522__auto____$1)){
-var y__$1 = cljs.core._nth(c__5521__auto____$1,i__13866);
-cljs.core.chunk_append(b__13867,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x__$1,y__$1], null));
+if((i__15800 < size__5522__auto____$1)){
+var y__$1 = cljs.core._nth(c__5521__auto____$1,i__15800);
+cljs.core.chunk_append(b__15801,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x__$1,y__$1], null));
 
-var G__14012 = (i__13866 + (1));
-i__13866 = G__14012;
+var G__16034 = (i__15800 + (1));
+i__15800 = G__16034;
 continue;
 } else {
 return true;
@@ -81,28 +81,28 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13867),reddonkey$geom$block_to_coords_$_iter__13860_$_iter__13864(cljs.core.chunk_rest(s__13865__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__15801),reddonkey$geom$block_to_coords_$_iter__15790_$_iter__15798(cljs.core.chunk_rest(s__15799__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13867),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__15801),null);
 }
 } else {
-var y__$1 = cljs.core.first(s__13865__$2);
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x__$1,y__$1], null),reddonkey$geom$block_to_coords_$_iter__13860_$_iter__13864(cljs.core.rest(s__13865__$2)));
+var y__$1 = cljs.core.first(s__15799__$2);
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x__$1,y__$1], null),reddonkey$geom$block_to_coords_$_iter__15790_$_iter__15798(cljs.core.rest(s__15799__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__13862,x__$1,c__5521__auto__,size__5522__auto__,b__13863,s__13861__$2,temp__5804__auto__,xr,yr,vec__13857,x,y,w,h))
+});})(i__15792,x__$1,c__5521__auto__,size__5522__auto__,b__15793,s__15791__$2,temp__5804__auto__,xr,yr,vec__15783,x,y,w,h))
 ,null,null));
-});})(i__13862,x__$1,c__5521__auto__,size__5522__auto__,b__13863,s__13861__$2,temp__5804__auto__,xr,yr,vec__13857,x,y,w,h))
+});})(i__15792,x__$1,c__5521__auto__,size__5522__auto__,b__15793,s__15791__$2,temp__5804__auto__,xr,yr,vec__15783,x,y,w,h))
 ;
 return iter__5523__auto__(yr);
 })());
 
-var G__14013 = (i__13862 + (1));
-i__13862 = G__14013;
+var G__16035 = (i__15792 + (1));
+i__15792 = G__16035;
 continue;
 } else {
 return true;
@@ -110,32 +110,32 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13863),reddonkey$geom$block_to_coords_$_iter__13860(cljs.core.chunk_rest(s__13861__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__15793),reddonkey$geom$block_to_coords_$_iter__15790(cljs.core.chunk_rest(s__15791__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13863),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__15793),null);
 }
 } else {
-var x__$1 = cljs.core.first(s__13861__$2);
-return cljs.core.cons((function (){var iter__5523__auto__ = ((function (x__$1,s__13861__$2,temp__5804__auto__,xr,yr,vec__13857,x,y,w,h){
-return (function reddonkey$geom$block_to_coords_$_iter__13860_$_iter__13868(s__13869){
+var x__$1 = cljs.core.first(s__15791__$2);
+return cljs.core.cons((function (){var iter__5523__auto__ = ((function (x__$1,s__15791__$2,temp__5804__auto__,xr,yr,vec__15783,x,y,w,h){
+return (function reddonkey$geom$block_to_coords_$_iter__15790_$_iter__15806(s__15807){
 return (new cljs.core.LazySeq(null,(function (){
-var s__13869__$1 = s__13869;
+var s__15807__$1 = s__15807;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__13869__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__15807__$1);
 if(temp__5804__auto____$1){
-var s__13869__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__13869__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__13869__$2);
+var s__15807__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__15807__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__15807__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__13871 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__13870 = (0);
+var b__15809 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__15808 = (0);
 while(true){
-if((i__13870 < size__5522__auto__)){
-var y__$1 = cljs.core._nth(c__5521__auto__,i__13870);
-cljs.core.chunk_append(b__13871,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x__$1,y__$1], null));
+if((i__15808 < size__5522__auto__)){
+var y__$1 = cljs.core._nth(c__5521__auto__,i__15808);
+cljs.core.chunk_append(b__15809,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x__$1,y__$1], null));
 
-var G__14014 = (i__13870 + (1));
-i__13870 = G__14014;
+var G__16036 = (i__15808 + (1));
+i__15808 = G__16036;
 continue;
 } else {
 return true;
@@ -143,13 +143,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13871),reddonkey$geom$block_to_coords_$_iter__13860_$_iter__13868(cljs.core.chunk_rest(s__13869__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__15809),reddonkey$geom$block_to_coords_$_iter__15790_$_iter__15806(cljs.core.chunk_rest(s__15807__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13871),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__15809),null);
 }
 } else {
-var y__$1 = cljs.core.first(s__13869__$2);
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x__$1,y__$1], null),reddonkey$geom$block_to_coords_$_iter__13860_$_iter__13868(cljs.core.rest(s__13869__$2)));
+var y__$1 = cljs.core.first(s__15807__$2);
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x__$1,y__$1], null),reddonkey$geom$block_to_coords_$_iter__15790_$_iter__15806(cljs.core.rest(s__15807__$2)));
 }
 } else {
 return null;
@@ -157,10 +157,10 @@ return null;
 break;
 }
 }),null,null));
-});})(x__$1,s__13861__$2,temp__5804__auto__,xr,yr,vec__13857,x,y,w,h))
+});})(x__$1,s__15791__$2,temp__5804__auto__,xr,yr,vec__15783,x,y,w,h))
 ;
 return iter__5523__auto__(yr);
-})(),reddonkey$geom$block_to_coords_$_iter__13860(cljs.core.rest(s__13861__$2)));
+})(),reddonkey$geom$block_to_coords_$_iter__15790(cljs.core.rest(s__15791__$2)));
 }
 } else {
 return null;
@@ -172,45 +172,45 @@ break;
 return iter__5523__auto__(xr);
 })()], 0));
 });
-reddonkey.geom.set_zeros = (function reddonkey$geom$set_zeros(board,p__13872){
-var vec__13873 = p__13872;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13873,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13873,(1),null);
-var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13873,(2),null);
-var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13873,(3),null);
+reddonkey.geom.set_zeros = (function reddonkey$geom$set_zeros(board,p__15818){
+var vec__15819 = p__15818;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15819,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15819,(1),null);
+var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15819,(2),null);
+var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15819,(3),null);
 var coords = reddonkey.geom.block_to_coords(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y,w,h], null));
-var new_board = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (b,p__13876){
-var vec__13877 = p__13876;
-var x__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13877,(0),null);
-var y__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13877,(1),null);
+var new_board = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (b,p__15822){
+var vec__15823 = p__15822;
+var x__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15823,(0),null);
+var y__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15823,(1),null);
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(b,y__$1,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.get.cljs$core$IFn$_invoke$arity$2(b,y__$1),x__$1,(0)));
 }),board,coords);
 return new_board;
 });
-reddonkey.geom.assign_block = (function reddonkey$geom$assign_block(board,n,p__13880){
-var vec__13881 = p__13880;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13881,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13881,(1),null);
-var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13881,(2),null);
-var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13881,(3),null);
+reddonkey.geom.assign_block = (function reddonkey$geom$assign_block(board,n,p__15834){
+var vec__15835 = p__15834;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15835,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15835,(1),null);
+var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15835,(2),null);
+var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15835,(3),null);
 var coords = reddonkey.geom.block_to_coords(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y,w,h], null));
-var new_board = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (b,p__13884){
-var vec__13885 = p__13884;
-var x__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13885,(0),null);
-var y__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13885,(1),null);
+var new_board = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (b,p__15838){
+var vec__15839 = p__15838;
+var x__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15839,(0),null);
+var y__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15839,(1),null);
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(b,y__$1,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.get.cljs$core$IFn$_invoke$arity$2(b,y__$1),x__$1,n));
 }),board,coords);
 return new_board;
 });
-reddonkey.geom.contains_zero_QMARK_ = (function reddonkey$geom$contains_zero_QMARK_(p__13888,p__13889){
-var vec__13890 = p__13888;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13890,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13890,(1),null);
-var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13890,(2),null);
-var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13890,(3),null);
-var vec__13893 = p__13889;
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13893,(0),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13893,(1),null);
+reddonkey.geom.contains_zero_QMARK_ = (function reddonkey$geom$contains_zero_QMARK_(p__15846,p__15847){
+var vec__15848 = p__15846;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15848,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15848,(1),null);
+var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15848,(2),null);
+var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15848,(3),null);
+var vec__15851 = p__15847;
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15851,(0),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15851,(1),null);
 var and__5043__auto__ = reddonkey.geom.in_interval_QMARK_(x,(x + w))(a);
 if(cljs.core.truth_(and__5043__auto__)){
 var and__5043__auto____$1 = reddonkey.geom.in_interval_QMARK_(x,(x + w))((a + (1)));
@@ -229,41 +229,41 @@ return and__5043__auto__;
 }
 });
 reddonkey.geom.assign_zeros = (function reddonkey$geom$assign_zeros(board,zeros){
-return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (b,p__13896){
-var vec__13897 = p__13896;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13897,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13897,(1),null);
+return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (b,p__15856){
+var vec__15857 = p__15856;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15857,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15857,(1),null);
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(b,y,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.get.cljs$core$IFn$_invoke$arity$2(b,y),x,(0)));
 }),board,zeros);
 });
-reddonkey.geom.moved_zeros = (function reddonkey$geom$moved_zeros(d,p__13900,zeros){
-var vec__13901 = p__13900;
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13901,(0),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13901,(1),null);
-var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13901,(2),null);
-var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13901,(3),null);
+reddonkey.geom.moved_zeros = (function reddonkey$geom$moved_zeros(d,p__15873,zeros){
+var vec__15874 = p__15873;
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15874,(0),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15874,(1),null);
+var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15874,(2),null);
+var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15874,(3),null);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(-10))){
-return cljs.core.vec((function (){var iter__5523__auto__ = (function reddonkey$geom$moved_zeros_$_iter__13904(s__13905){
+return cljs.core.vec((function (){var iter__5523__auto__ = (function reddonkey$geom$moved_zeros_$_iter__15877(s__15878){
 return (new cljs.core.LazySeq(null,(function (){
-var s__13905__$1 = s__13905;
+var s__15878__$1 = s__15878;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__13905__$1);
+var temp__5804__auto__ = cljs.core.seq(s__15878__$1);
 if(temp__5804__auto__){
-var s__13905__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__13905__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__13905__$2);
+var s__15878__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__15878__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__15878__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__13907 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__13906 = (0);
+var b__15880 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__15879 = (0);
 while(true){
-if((i__13906 < size__5522__auto__)){
-var vec__13908 = cljs.core._nth(c__5521__auto__,i__13906);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13908,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13908,(1),null);
-cljs.core.chunk_append(b__13907,(cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x + w),y], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)));
+if((i__15879 < size__5522__auto__)){
+var vec__15884 = cljs.core._nth(c__5521__auto__,i__15879);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15884,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15884,(1),null);
+cljs.core.chunk_append(b__15880,(cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x + w),y], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)));
 
-var G__14026 = (i__13906 + (1));
-i__13906 = G__14026;
+var G__16037 = (i__15879 + (1));
+i__15879 = G__16037;
 continue;
 } else {
 return true;
@@ -271,15 +271,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13907),reddonkey$geom$moved_zeros_$_iter__13904(cljs.core.chunk_rest(s__13905__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__15880),reddonkey$geom$moved_zeros_$_iter__15877(cljs.core.chunk_rest(s__15878__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13907),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__15880),null);
 }
 } else {
-var vec__13911 = cljs.core.first(s__13905__$2);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13911,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13911,(1),null);
-return cljs.core.cons((cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x + w),y], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)),reddonkey$geom$moved_zeros_$_iter__13904(cljs.core.rest(s__13905__$2)));
+var vec__15890 = cljs.core.first(s__15878__$2);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15890,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15890,(1),null);
+return cljs.core.cons((cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x + w),y], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)),reddonkey$geom$moved_zeros_$_iter__15877(cljs.core.rest(s__15878__$2)));
 }
 } else {
 return null;
@@ -292,27 +292,27 @@ return iter__5523__auto__(zeros);
 })());
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(10))){
-return cljs.core.vec((function (){var iter__5523__auto__ = (function reddonkey$geom$moved_zeros_$_iter__13914(s__13915){
+return cljs.core.vec((function (){var iter__5523__auto__ = (function reddonkey$geom$moved_zeros_$_iter__15897(s__15898){
 return (new cljs.core.LazySeq(null,(function (){
-var s__13915__$1 = s__13915;
+var s__15898__$1 = s__15898;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__13915__$1);
+var temp__5804__auto__ = cljs.core.seq(s__15898__$1);
 if(temp__5804__auto__){
-var s__13915__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__13915__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__13915__$2);
+var s__15898__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__15898__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__15898__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__13917 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__13916 = (0);
+var b__15900 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__15899 = (0);
 while(true){
-if((i__13916 < size__5522__auto__)){
-var vec__13918 = cljs.core._nth(c__5521__auto__,i__13916);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13918,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13918,(1),null);
-cljs.core.chunk_append(b__13917,(cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x - w),y], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)));
+if((i__15899 < size__5522__auto__)){
+var vec__15904 = cljs.core._nth(c__5521__auto__,i__15899);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15904,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15904,(1),null);
+cljs.core.chunk_append(b__15900,(cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x - w),y], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)));
 
-var G__14027 = (i__13916 + (1));
-i__13916 = G__14027;
+var G__16038 = (i__15899 + (1));
+i__15899 = G__16038;
 continue;
 } else {
 return true;
@@ -320,15 +320,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13917),reddonkey$geom$moved_zeros_$_iter__13914(cljs.core.chunk_rest(s__13915__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__15900),reddonkey$geom$moved_zeros_$_iter__15897(cljs.core.chunk_rest(s__15898__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13917),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__15900),null);
 }
 } else {
-var vec__13921 = cljs.core.first(s__13915__$2);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13921,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13921,(1),null);
-return cljs.core.cons((cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x - w),y], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)),reddonkey$geom$moved_zeros_$_iter__13914(cljs.core.rest(s__13915__$2)));
+var vec__15910 = cljs.core.first(s__15898__$2);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15910,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15910,(1),null);
+return cljs.core.cons((cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x - w),y], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)),reddonkey$geom$moved_zeros_$_iter__15897(cljs.core.rest(s__15898__$2)));
 }
 } else {
 return null;
@@ -341,27 +341,27 @@ return iter__5523__auto__(zeros);
 })());
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(1))){
-return cljs.core.vec((function (){var iter__5523__auto__ = (function reddonkey$geom$moved_zeros_$_iter__13924(s__13925){
+return cljs.core.vec((function (){var iter__5523__auto__ = (function reddonkey$geom$moved_zeros_$_iter__15913(s__15914){
 return (new cljs.core.LazySeq(null,(function (){
-var s__13925__$1 = s__13925;
+var s__15914__$1 = s__15914;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__13925__$1);
+var temp__5804__auto__ = cljs.core.seq(s__15914__$1);
 if(temp__5804__auto__){
-var s__13925__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__13925__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__13925__$2);
+var s__15914__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__15914__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__15914__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__13927 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__13926 = (0);
+var b__15916 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__15915 = (0);
 while(true){
-if((i__13926 < size__5522__auto__)){
-var vec__13928 = cljs.core._nth(c__5521__auto__,i__13926);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13928,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13928,(1),null);
-cljs.core.chunk_append(b__13927,(cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y - h)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)));
+if((i__15915 < size__5522__auto__)){
+var vec__15921 = cljs.core._nth(c__5521__auto__,i__15915);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15921,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15921,(1),null);
+cljs.core.chunk_append(b__15916,(cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y - h)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)));
 
-var G__14028 = (i__13926 + (1));
-i__13926 = G__14028;
+var G__16039 = (i__15915 + (1));
+i__15915 = G__16039;
 continue;
 } else {
 return true;
@@ -369,15 +369,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13927),reddonkey$geom$moved_zeros_$_iter__13924(cljs.core.chunk_rest(s__13925__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__15916),reddonkey$geom$moved_zeros_$_iter__15913(cljs.core.chunk_rest(s__15914__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13927),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__15916),null);
 }
 } else {
-var vec__13931 = cljs.core.first(s__13925__$2);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13931,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13931,(1),null);
-return cljs.core.cons((cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y - h)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)),reddonkey$geom$moved_zeros_$_iter__13924(cljs.core.rest(s__13925__$2)));
+var vec__15928 = cljs.core.first(s__15914__$2);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15928,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15928,(1),null);
+return cljs.core.cons((cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y - h)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)),reddonkey$geom$moved_zeros_$_iter__15913(cljs.core.rest(s__15914__$2)));
 }
 } else {
 return null;
@@ -390,27 +390,27 @@ return iter__5523__auto__(zeros);
 })());
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(-1))){
-return cljs.core.vec((function (){var iter__5523__auto__ = (function reddonkey$geom$moved_zeros_$_iter__13934(s__13935){
+return cljs.core.vec((function (){var iter__5523__auto__ = (function reddonkey$geom$moved_zeros_$_iter__15932(s__15933){
 return (new cljs.core.LazySeq(null,(function (){
-var s__13935__$1 = s__13935;
+var s__15933__$1 = s__15933;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__13935__$1);
+var temp__5804__auto__ = cljs.core.seq(s__15933__$1);
 if(temp__5804__auto__){
-var s__13935__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__13935__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__13935__$2);
+var s__15933__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__15933__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__15933__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__13937 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__13936 = (0);
+var b__15935 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__15934 = (0);
 while(true){
-if((i__13936 < size__5522__auto__)){
-var vec__13938 = cljs.core._nth(c__5521__auto__,i__13936);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13938,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13938,(1),null);
-cljs.core.chunk_append(b__13937,(cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y + h)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)));
+if((i__15934 < size__5522__auto__)){
+var vec__15943 = cljs.core._nth(c__5521__auto__,i__15934);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15943,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15943,(1),null);
+cljs.core.chunk_append(b__15935,(cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y + h)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)));
 
-var G__14029 = (i__13936 + (1));
-i__13936 = G__14029;
+var G__16040 = (i__15934 + (1));
+i__15934 = G__16040;
 continue;
 } else {
 return true;
@@ -418,15 +418,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13937),reddonkey$geom$moved_zeros_$_iter__13934(cljs.core.chunk_rest(s__13935__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__15935),reddonkey$geom$moved_zeros_$_iter__15932(cljs.core.chunk_rest(s__15933__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13937),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__15935),null);
 }
 } else {
-var vec__13941 = cljs.core.first(s__13935__$2);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13941,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13941,(1),null);
-return cljs.core.cons((cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y + h)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)),reddonkey$geom$moved_zeros_$_iter__13934(cljs.core.rest(s__13935__$2)));
+var vec__15950 = cljs.core.first(s__15933__$2);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15950,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15950,(1),null);
+return cljs.core.cons((cljs.core.truth_(reddonkey.geom.contains_zero_QMARK_(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b,w,h], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y + h)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)),reddonkey$geom$moved_zeros_$_iter__15932(cljs.core.rest(s__15933__$2)));
 }
 } else {
 return null;
@@ -444,32 +444,32 @@ return null;
 }
 }
 });
-reddonkey.geom.apply_move = (function reddonkey$geom$apply_move(p__13944,p__13945){
-var map__13946 = p__13944;
-var map__13946__$1 = cljs.core.__destructure_map(map__13946);
-var board = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13946__$1,new cljs.core.Keyword(null,"board","board",-1907017633));
-var zero = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13946__$1,new cljs.core.Keyword(null,"zero","zero",-858964576));
-var blocks = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13946__$1,new cljs.core.Keyword(null,"blocks","blocks",-610462153));
-var vec__13947 = p__13945;
-var n = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13947,(0),null);
-var d = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13947,(1),null);
-var vec__13950 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(blocks,n);
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13950,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13950,(1),null);
-var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13950,(2),null);
-var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13950,(3),null);
+reddonkey.geom.apply_move = (function reddonkey$geom$apply_move(p__15960,p__15961){
+var map__15962 = p__15960;
+var map__15962__$1 = cljs.core.__destructure_map(map__15962);
+var board = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__15962__$1,new cljs.core.Keyword(null,"board","board",-1907017633));
+var zero = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__15962__$1,new cljs.core.Keyword(null,"zero","zero",-858964576));
+var blocks = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__15962__$1,new cljs.core.Keyword(null,"blocks","blocks",-610462153));
+var vec__15963 = p__15961;
+var n = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15963,(0),null);
+var d = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15963,(1),null);
+var vec__15966 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(blocks,n);
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15966,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15966,(1),null);
+var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15966,(2),null);
+var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15966,(3),null);
 var new_block = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(-10)))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x - (1)),y,w,h], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(10)))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x + (1)),y,w,h], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(1)))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y + (1)),w,h], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(-1)))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y - (1)),w,h], null):null))));
 var new_blocks = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(blocks,n,new_block);
 var new_zeros = reddonkey.geom.moved_zeros(d,new_block,zero);
 var new_board = reddonkey.geom.assign_block(reddonkey.geom.assign_zeros(board,new_zeros),n,new_block);
 return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"board","board",-1907017633),new_board,new cljs.core.Keyword(null,"zero","zero",-858964576),new_zeros,new cljs.core.Keyword(null,"blocks","blocks",-610462153),new_blocks], null);
 });
-reddonkey.geom.fits_zero_QMARK_ = (function reddonkey$geom$fits_zero_QMARK_(n,d,p__13953,board){
-var vec__13954 = p__13953;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13954,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13954,(1),null);
-var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13954,(2),null);
-var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13954,(3),null);
+reddonkey.geom.fits_zero_QMARK_ = (function reddonkey$geom$fits_zero_QMARK_(n,d,p__15969,board){
+var vec__15970 = p__15969;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15970,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15970,(1),null);
+var w = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15970,(2),null);
+var h = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15970,(3),null);
 var new_block = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(1)))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y + (1)),w,h], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(-1)))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,(y - (1)),w,h], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(10)))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x + (1)),y,w,h], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(d,(-10)))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x - (1)),y,w,h], null):null))));
 var assigned_board = reddonkey.geom.assign_block(reddonkey.geom.set_zeros(board,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y,w,h], null)),n,new_block);
 var non_zero = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (x__$1){
@@ -477,38 +477,38 @@ return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(x__$1,(0));
 }),cljs.core.flatten(assigned_board));
 return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(non_zero),(18));
 });
-reddonkey.geom.next_moves = (function reddonkey$geom$next_moves(p__13957){
-var map__13958 = p__13957;
-var map__13958__$1 = cljs.core.__destructure_map(map__13958);
-var board = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13958__$1,new cljs.core.Keyword(null,"board","board",-1907017633));
-var zero = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13958__$1,new cljs.core.Keyword(null,"zero","zero",-858964576));
-var blocks = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13958__$1,new cljs.core.Keyword(null,"blocks","blocks",-610462153));
-var vec__13959 = zero;
-var vec__13962 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13959,(0),null);
-var x1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13962,(0),null);
-var y1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13962,(1),null);
-var vec__13965 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13959,(1),null);
-var x2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13965,(0),null);
-var y2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13965,(1),null);
+reddonkey.geom.next_moves = (function reddonkey$geom$next_moves(p__15979){
+var map__15980 = p__15979;
+var map__15980__$1 = cljs.core.__destructure_map(map__15980);
+var board = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__15980__$1,new cljs.core.Keyword(null,"board","board",-1907017633));
+var zero = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__15980__$1,new cljs.core.Keyword(null,"zero","zero",-858964576));
+var blocks = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__15980__$1,new cljs.core.Keyword(null,"blocks","blocks",-610462153));
+var vec__15981 = zero;
+var vec__15984 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15981,(0),null);
+var x1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15984,(0),null);
+var y1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15984,(1),null);
+var vec__15987 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15981,(1),null);
+var x2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15987,(0),null);
+var y2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15987,(1),null);
 var moves1 = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x1 + (1)),y1], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x1 - (1)),y1], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x1,(y1 + (1))], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x1,(y1 - (1))], null)], null);
 var moves2 = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x2 + (1)),y2], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x2 - (1)),y2], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x2,(y2 + (1))], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x2,(y2 - (1))], null)], null);
-var allowed_moves1 = (function (){var iter__5523__auto__ = (function reddonkey$geom$next_moves_$_iter__13968(s__13969){
+var allowed_moves1 = (function (){var iter__5523__auto__ = (function reddonkey$geom$next_moves_$_iter__15990(s__15991){
 return (new cljs.core.LazySeq(null,(function (){
-var s__13969__$1 = s__13969;
+var s__15991__$1 = s__15991;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__13969__$1);
+var temp__5804__auto__ = cljs.core.seq(s__15991__$1);
 if(temp__5804__auto__){
-var s__13969__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__13969__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__13969__$2);
+var s__15991__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__15991__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__15991__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__13971 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__13970 = (0);
+var b__15993 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__15992 = (0);
 while(true){
-if((i__13970 < size__5522__auto__)){
-var vec__13972 = cljs.core._nth(c__5521__auto__,i__13970);
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13972,(0),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13972,(1),null);
+if((i__15992 < size__5522__auto__)){
+var vec__15994 = cljs.core._nth(c__5521__auto__,i__15992);
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15994,(0),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15994,(1),null);
 if(cljs.core.truth_((function (){var and__5043__auto__ = reddonkey.geom.in_interval_QMARK_((0),(3))(a);
 if(cljs.core.truth_(and__5043__auto__)){
 return reddonkey.geom.in_interval_QMARK_((0),(4))(b);
@@ -516,14 +516,14 @@ return reddonkey.geom.in_interval_QMARK_((0),(4))(b);
 return and__5043__auto__;
 }
 })())){
-cljs.core.chunk_append(b__13971,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b], null));
+cljs.core.chunk_append(b__15993,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b], null));
 
-var G__14030 = (i__13970 + (1));
-i__13970 = G__14030;
+var G__16048 = (i__15992 + (1));
+i__15992 = G__16048;
 continue;
 } else {
-var G__14031 = (i__13970 + (1));
-i__13970 = G__14031;
+var G__16049 = (i__15992 + (1));
+i__15992 = G__16049;
 continue;
 }
 } else {
@@ -532,14 +532,14 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13971),reddonkey$geom$next_moves_$_iter__13968(cljs.core.chunk_rest(s__13969__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__15993),reddonkey$geom$next_moves_$_iter__15990(cljs.core.chunk_rest(s__15991__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13971),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__15993),null);
 }
 } else {
-var vec__13975 = cljs.core.first(s__13969__$2);
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13975,(0),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13975,(1),null);
+var vec__15997 = cljs.core.first(s__15991__$2);
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15997,(0),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__15997,(1),null);
 if(cljs.core.truth_((function (){var and__5043__auto__ = reddonkey.geom.in_interval_QMARK_((0),(3))(a);
 if(cljs.core.truth_(and__5043__auto__)){
 return reddonkey.geom.in_interval_QMARK_((0),(4))(b);
@@ -547,10 +547,10 @@ return reddonkey.geom.in_interval_QMARK_((0),(4))(b);
 return and__5043__auto__;
 }
 })())){
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b], null),reddonkey$geom$next_moves_$_iter__13968(cljs.core.rest(s__13969__$2)));
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b], null),reddonkey$geom$next_moves_$_iter__15990(cljs.core.rest(s__15991__$2)));
 } else {
-var G__14032 = cljs.core.rest(s__13969__$2);
-s__13969__$1 = G__14032;
+var G__16050 = cljs.core.rest(s__15991__$2);
+s__15991__$1 = G__16050;
 continue;
 }
 }
@@ -563,23 +563,23 @@ break;
 });
 return iter__5523__auto__(moves1);
 })();
-var allowed_moves2 = (function (){var iter__5523__auto__ = (function reddonkey$geom$next_moves_$_iter__13978(s__13979){
+var allowed_moves2 = (function (){var iter__5523__auto__ = (function reddonkey$geom$next_moves_$_iter__16000(s__16001){
 return (new cljs.core.LazySeq(null,(function (){
-var s__13979__$1 = s__13979;
+var s__16001__$1 = s__16001;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__13979__$1);
+var temp__5804__auto__ = cljs.core.seq(s__16001__$1);
 if(temp__5804__auto__){
-var s__13979__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__13979__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__13979__$2);
+var s__16001__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__16001__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__16001__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__13981 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__13980 = (0);
+var b__16003 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__16002 = (0);
 while(true){
-if((i__13980 < size__5522__auto__)){
-var vec__13982 = cljs.core._nth(c__5521__auto__,i__13980);
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13982,(0),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13982,(1),null);
+if((i__16002 < size__5522__auto__)){
+var vec__16004 = cljs.core._nth(c__5521__auto__,i__16002);
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16004,(0),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16004,(1),null);
 if(cljs.core.truth_((function (){var and__5043__auto__ = reddonkey.geom.in_interval_QMARK_((0),(3))(a);
 if(cljs.core.truth_(and__5043__auto__)){
 return reddonkey.geom.in_interval_QMARK_((0),(4))(b);
@@ -587,14 +587,14 @@ return reddonkey.geom.in_interval_QMARK_((0),(4))(b);
 return and__5043__auto__;
 }
 })())){
-cljs.core.chunk_append(b__13981,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b], null));
+cljs.core.chunk_append(b__16003,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b], null));
 
-var G__14033 = (i__13980 + (1));
-i__13980 = G__14033;
+var G__16051 = (i__16002 + (1));
+i__16002 = G__16051;
 continue;
 } else {
-var G__14034 = (i__13980 + (1));
-i__13980 = G__14034;
+var G__16052 = (i__16002 + (1));
+i__16002 = G__16052;
 continue;
 }
 } else {
@@ -603,14 +603,14 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__13981),reddonkey$geom$next_moves_$_iter__13978(cljs.core.chunk_rest(s__13979__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__16003),reddonkey$geom$next_moves_$_iter__16000(cljs.core.chunk_rest(s__16001__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__13981),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__16003),null);
 }
 } else {
-var vec__13985 = cljs.core.first(s__13979__$2);
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13985,(0),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13985,(1),null);
+var vec__16007 = cljs.core.first(s__16001__$2);
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16007,(0),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16007,(1),null);
 if(cljs.core.truth_((function (){var and__5043__auto__ = reddonkey.geom.in_interval_QMARK_((0),(3))(a);
 if(cljs.core.truth_(and__5043__auto__)){
 return reddonkey.geom.in_interval_QMARK_((0),(4))(b);
@@ -618,10 +618,10 @@ return reddonkey.geom.in_interval_QMARK_((0),(4))(b);
 return and__5043__auto__;
 }
 })())){
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b], null),reddonkey$geom$next_moves_$_iter__13978(cljs.core.rest(s__13979__$2)));
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a,b], null),reddonkey$geom$next_moves_$_iter__16000(cljs.core.rest(s__16001__$2)));
 } else {
-var G__14035 = cljs.core.rest(s__13979__$2);
-s__13979__$1 = G__14035;
+var G__16057 = cljs.core.rest(s__16001__$2);
+s__16001__$1 = G__16057;
 continue;
 }
 }
@@ -634,40 +634,40 @@ break;
 });
 return iter__5523__auto__(moves2);
 })();
-var allowed_without_zero1 = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p__13988){
-var vec__13989 = p__13988;
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13989,(0),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13989,(1),null);
+var allowed_without_zero1 = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p__16010){
+var vec__16011 = p__16010;
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16011,(0),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16011,(1),null);
 return (((!(((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(a,x1)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(b,y1)))))) && ((!(((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(a,x2)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(b,y2)))))));
 }),allowed_moves1);
-var allowed_without_zero2 = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p__13992){
-var vec__13993 = p__13992;
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13993,(0),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13993,(1),null);
+var allowed_without_zero2 = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p__16014){
+var vec__16015 = p__16014;
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16015,(0),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16015,(1),null);
 return (((!(((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(a,x1)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(b,y1)))))) && ((!(((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(a,x2)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(b,y2)))))));
 }),allowed_moves2);
-var actions1 = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__13996){
-var vec__13997 = p__13996;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13997,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13997,(1),null);
+var actions1 = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__16018){
+var vec__16019 = p__16018;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16019,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16019,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get.cljs$core$IFn$_invoke$arity$2(cljs.core.get.cljs$core$IFn$_invoke$arity$2(board,y),x),reddonkey.geom.diff_to_action(cljs.core.map.cljs$core$IFn$_invoke$arity$3(cljs.core._,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x1,y1], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))], null);
 }),allowed_without_zero1);
-var actions2 = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__14000){
-var vec__14001 = p__14000;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__14001,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__14001,(1),null);
+var actions2 = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__16022){
+var vec__16023 = p__16022;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16023,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16023,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get.cljs$core$IFn$_invoke$arity$2(cljs.core.get.cljs$core$IFn$_invoke$arity$2(board,y),x),reddonkey.geom.diff_to_action(cljs.core.map.cljs$core$IFn$_invoke$arity$3(cljs.core._,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x2,y2], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x,y], null)))], null);
 }),allowed_without_zero2);
-var actions_fit1 = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p__14004){
-var vec__14005 = p__14004;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__14005,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__14005,(1),null);
+var actions_fit1 = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p__16026){
+var vec__16027 = p__16026;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16027,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16027,(1),null);
 return reddonkey.geom.fits_zero_QMARK_(x,y,cljs.core.get.cljs$core$IFn$_invoke$arity$2(blocks,x),board);
 }),actions1);
-var actions_fit2 = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p__14008){
-var vec__14009 = p__14008;
-var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__14009,(0),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__14009,(1),null);
+var actions_fit2 = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p__16030){
+var vec__16031 = p__16030;
+var x = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16031,(0),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16031,(1),null);
 return reddonkey.geom.fits_zero_QMARK_(x,y,cljs.core.get.cljs$core$IFn$_invoke$arity$2(blocks,x),board);
 }),actions2);
 return cljs.core.vec(cljs.core.set(cljs.core.concat.cljs$core$IFn$_invoke$arity$2(actions_fit1,actions_fit2)));
