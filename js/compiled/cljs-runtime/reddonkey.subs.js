@@ -5,6 +5,9 @@ return new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invok
 re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("reddonkey.subs","state","reddonkey.subs/state",484656929),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (db){
 return new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(db);
 })], 0));
+re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("reddonkey.subs","solving","reddonkey.subs/solving",1815365687),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (db){
+return new cljs.core.Keyword(null,"solving","solving",-175043197).cljs$core$IFn$_invoke$arity$1(db);
+})], 0));
 re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("reddonkey.subs","next-moves","reddonkey.subs/next-moves",1137084087),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (db){
 return reddonkey.geom.next_moves(new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(db));
 })], 0));

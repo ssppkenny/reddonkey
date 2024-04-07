@@ -19,6 +19,8 @@ re_frame.core.dispatch_sync(new cljs.core.PersistentVector(null, 1, 5, cljs.core
 
 re_frame.core.dispatch_sync(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("re-pressed.core","add-keyboard-event-listener","re-pressed.core/add-keyboard-event-listener",719500381),"keydown"], null));
 
+re_frame.core.dispatch_sync(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("re-pressed.core","add-keyboard-event-listener","re-pressed.core/add-keyboard-event-listener",719500381),"keypress"], null));
+
 reddonkey.core.dev_setup();
 
 return reddonkey.core.mount_root();
